@@ -1,0 +1,272 @@
+body {
+  --main-blue: #03989e;
+  --main-bg-color: #a8cbcc;
+  font-family: "Roboto", sans-serif;
+  	display : table;
+	width: 100%;
+}
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
+
+/* HEADER ACCUEIL */
+
+.homepage {
+  margin: 0;
+  padding: 0;
+  background: url(../images/Photo-en-tete-scaled.jpg) no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  height: 52rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.bg-light{
+  background-color: #E2EAEE !important;
+}
+
+.headerPages .nav-link{
+  color: black !important;
+  margin-right: 1rem;
+}
+.headerPages .nav-link:hover{
+  text-decoration: underline;
+}
+
+.linkHeaderPages {
+  text-align: center; 
+  margin: auto;
+
+}
+.linkHeaderPages a {
+  color: black;
+  margin-left: 1.5rem;
+}
+
+
+.slogan {
+  font-family: "Abhaya Libre", serif;
+  margin: 3.5rem;
+  font-size: 5rem;
+  color: white;
+  text-shadow: -1px -1px black, 1px 1px black, 0px 0px 6px black;
+}
+header > p {
+  font-family: "Bad Script", cursive;
+  margin: 3rem 1rem;
+  color: black;
+  text-shadow: -1px -1px white, 1px 1px white, 0px 0px 10px white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.btn-header {
+  vertical-align: bottom;
+  margin: 5rem;
+}
+
+section:target {
+  /* Gère le decallage en haut pour la taille de la navbar */
+  padding-top: 3em;
+  margin-top: -3em;
+}
+
+header > .link {
+  text-align: right;
+  align-self: flex-end;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NAVBAR ACCUEIL */
+
+.navbar {
+  background-color: var(--main-blue);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.nav-pills .nav-link {
+  background-color: var(--main-blue);
+  color: white !important;
+  margin: 0.2rem;
+  text-align: center;
+}
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  color: white !important;
+  background-color: #138496 !important;
+}
+.navbar-toggler {
+  
+  border-style: none;
+  background-color: var(--main-blue);
+  border: 2px solid white;
+}
+.togglerPages{
+  background-color: #e2eaee;
+}
+#navbarNav{
+  justify-content: right;
+}
+
+/* SECTION ACCUEIL */
+
+.s1 {
+  background-color: var(--main-bg-color);
+  padding: 2rem 0;
+}
+section {
+  margin-bottom: 7rem;
+  text-align: center;
+}
+.shelterItalic {
+  font-style: italic;
+}
+h2
+ {
+  color: var(--main-blue);
+  text-shadow: 0px 0px 2px white;
+  font-weight: bold;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+h3 {
+  margin: 3rem 0;
+  text-align: center;
+  color: var(--main-blue);
+  text-shadow: 0px 0px 1px var(--main-bg-color);
+}
+.shelterH3{
+  font-style: italic;
+  margin: 2rem 0;
+  color: white;
+}
+#Qui-suis-je p {
+  padding: 0.2rem;
+}
+#Qui-suis-je img {
+  width: 100%;
+}
+.cat {
+  margin-bottom: 1.5rem;
+}
+.borderblack {
+  margin-bottom: 2rem;
+  border: 1px solid black;
+}
+.borderblack1,
+.borderblack2 {
+  margin: 2rem 0.5rem;
+  border: 1px solid black;
+}
+
+.btn-end {
+  display: block;
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #e2eaee;
+  text-align: center;
+  display : table-row;
+  height: 8rem; 
+}
+footer a {
+  color: black;
+}
+.mentions {
+  margin-top:2rem;
+  text-align: center; 
+  margin: auto;
+}
+
+/* LOGIN */
+
+.divFormLogin, .divFormRegister {
+  text-align: center;
+}
+.divFormLogin{
+    margin: 2.5rem 0;
+}
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px var(--main-bg-color);
+  margin-bottom: 3rem;
+
+}
+.formLogin .btn, .formContact .btn{
+  margin: 2rem 0 ;
+}
+.form-actions{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+
+/* MENTIONS */
+
+.h2Mentions{
+  text-transform: uppercase;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* INSCRIPTION */
+
+.formRegister, .formDisconnect , #contact-form, #declaration-form {
+  box-shadow: 0px 0px 10px var(--main-bg-color);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+.formRegisterLeft input{
+  width: 70%;
+  margin: auto;
+}
+.formRegister p{
+  text-align: center;
+}
+.btnRegister{
+  margin: 3rem auto;
+}
+
+/* CONTACT PETSITTER */
+
+#service-select{
+  margin-top: 0.2rem ;
+  margin-bottom: 2rem;
+
+}
+.blue{
+  color: var(--main-blue);
+  margin: 0.5rem;
+  font-style: italic;
+}
+
+/* DECLARATION PRESTATION */
+
+.divider{
+  width: 60%;
+  height: 1px;
+  background: var(--main-blue);
+  margin: 3rem;
+}
