@@ -11,8 +11,8 @@ require_once "./Utils/View.php";
 
     <?php
 
-    if (!empty($_SESSION["firstname"])) {
-        // displayHTMLHeaderHomeLog();
+    if (!empty($_SESSION['petsitter_firstname'])) {
+         displayHTMLHeaderHomeLog();
     } else {
         displayHTMLHeaderHome();
     }

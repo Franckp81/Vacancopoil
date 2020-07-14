@@ -51,128 +51,133 @@ function displayHTMLHeadPages()
         </head>
 
         <body>
-    <?php
-}
+        <?php
+    }
 
-function displayHTMLHeaderHome()
-{
-    ?>
-        <header class="homepage">
-            <div class="link">
-                <a class="btn btn-info" role="button" href="connexion.php"> Connexion petsitter</a>
-                <a class="btn btn-info" role="button" href="inscription.php"> Devenir un petsitter</a>
-            </div>
-            <h1 class="slogan">Partez l'esprit tranquille</h1>
-            <p>Confiez la garde de votre animal à nos familles partenaires pour que lui aussi passe de super vacances</p>
-            <a class="btn-lg btn-info btn-header" role="button" href="recherche.php"> Rechercher un petsitter</a>
-        </header>
-    <?php
-}
-
-function displayHTMLHeaderHomeLog()
-{
-    ?>
-        <header class="homepage">
-            <div class="link">
-                <a class="firstnameHome" href=>Bienvenue <?php echo $_SESSION['petsitter_firstname'] ?>,</a>
-                <a class="btn btn-info" role="button" href="declaration.php"> Déclarer une prestation</a>
-                <a class="btn btn-info" role="button" href="deconnexion.php"> Deconnexion</a>
-            </div>
-            <h1 class="slogan">Partez l'esprit tranquille</h1>
-            <p>Confiez la garde de votre animal à nos familles partenaires pour que lui aussi passe de super vacances</p>
-            <a class="btn-lg btn-info btn-header" role="button" href="recherche.php"> Rechercher un petsitter</a>
-        </header>
-    <?php
-}
-
-function displayHTMLHeaderPages()
-{
-    ?>
-        <header class="headerPages">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"> <a href="index.php"><img class="img-fluid" src="./images/cropped-logo-grand-owp.png" alt="Logo de Vacancopoil" align="center"></a></a>
-                <button class="navbar-toggler togglerPages" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="recherche.php">Recherche</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="connexion.php">Connexion / Inscription</a>
-                        </li>
-                    </ul>
+    function displayHTMLHeaderHome()
+    {
+        ?>
+            <header class="homepage">
+                <div class="link">
+                    <a class="btn btn-info" role="button" href="connexion.php"> Connexion petsitter</a>
+                    <a class="btn btn-info" role="button" href="inscription.php"> Devenir un petsitter</a>
                 </div>
-            </nav>
+                <h1 class="slogan">Partez l'esprit tranquille</h1>
+                <p>Confiez la garde de votre animal à nos familles partenaires pour que lui aussi passe de super vacances</p>
+                <a class="btn-lg btn-info btn-header" role="button" href="recherche.php"> Rechercher un petsitter</a>
+            </header>
+        <?php
+    }
 
-        </header>
-    <?php
-}
 
-function displayHTMLHeaderPagesLog()
-{
 
-    ?>
-        <header class="headerPages">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"> <a href="index.php"><img class="img-fluid" src="./images/cropped-logo-grand-owp.png" alt="Logo de Vacancopoil" align="center"></a></a>
-                <button class="navbar-toggler togglerPages" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Bienvenue <?php echo $_SESSION['petsitter_firstname'] ?>,</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="declaration.php">Déclarer une prestation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="deconnexion.php">Déconnexion</a>
-                        </li>
-                    </ul>
+    function displayHTMLHeaderHomeLog()
+    {
+        ?>
+            <header class="homepage">
+                <div class="link">
+                    <p>Bienvenue <?php echo $_SESSION['firstname'] ?>,</p>
+                    <a class="btn btn-info" role="button" href="declaration.php"> Déclarer une prestation</a>
+                    <a class="btn btn-info" role="button" href="deconnexion.php"> Deconnexion</a>
                 </div>
-            </nav>
+                <h1 class="slogan">Partez l'esprit tranquille</h1>
+                <p>Confiez la garde de votre animal à nos familles partenaires pour que lui aussi passe de super vacances</p>
+                <a class="btn-lg btn-info btn-header" role="button" href="recherche.php"> Rechercher un petsitter</a>
+            </header>
+        <?php
 
-        </header>
-    <?php
+    }
 
-}
 
-function displayHTMLfooter()
-{
-    ?>
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <p>Nous contacter :</p>
-                        <p>Mail : contact@vacancopoil.fr</p>
-                        <p>Téléphone : 06 21 55 22 30</p>
+    function displayHTMLHeaderPages()
+    {
+        ?>
+            <header class="headerPages">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"> <a href="index.php"><img class="img-fluid" src="./images/cropped-logo-grand-owp.png" alt="Logo de Vacancopoil" align="center"></a></a>
+                    <button class="navbar-toggler togglerPages" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recherche.php">Recherche</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="connexion.php">Connexion / Inscription</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 mentions">
-                        <a href="mentions_legales.php">Mentions légales</a>
+                </nav>
+
+            </header>
+        <?php
+    }
+
+    function displayHTMLHeaderPagesLog()
+    {
+
+        ?>
+            <header class="headerPages">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"> <a href="index.php"><img class="img-fluid" src="./images/cropped-logo-grand-owp.png" alt="Logo de Vacancopoil" align="center"></a></a>
+                    <button class="navbar-toggler togglerPages" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p class="nav-link">Bonjour toto,</p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="declaration.php">Déclarer une prestation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <a href="./index.php"><img class="img-fluid" src="images/cropped-logo-petit-owp.png" alt="Logo de Vacancopoil"></a>
+                </nav>
+
+            </header>
+        <?php
+
+    }
+
+    function displayHTMLfooter()
+    {
+        ?>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <p>Nous contacter :</p>
+                            <p>Mail : contact@vacancopoil.fr</p>
+                            <p>Téléphone : 06 21 55 22 30</p>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mentions">
+                            <a href="mentions_legales.php">Mentions légales</a>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <a href="./index.php"><img class="img-fluid" src="images/cropped-logo-petit-owp.png" alt="Logo de Vacancopoil"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </body>
+            </footer>
+        </body>
 
-    </html>
-<?php
-}
+        </html>
+    <?php
+    }
 
-function displayHTMLnavbar()
-{
+    function displayHTMLnavbar()
+    {
     ?>
         <nav class="navbar navbar-expand-md navbar-dark sticky-top">
             <a class="navbar-brand" href="#"></a>
@@ -191,10 +196,10 @@ function displayHTMLnavbar()
             </div>
         </nav>
     <?php
-}
+    }
 
-function displayHTMLsection()
-{
+    function displayHTMLsection()
+    {
     ?>
         <div class="container-fluid s1">
 
@@ -290,10 +295,11 @@ function displayHTMLsection()
             </section>
         </div>
     <?php
-}
+    }
 
-function displayHTMLLogin()
-{
+    function displayHTMLLogin()
+    {
+        $email = $emailError = $password = $passwordError = $login = "";
     ?>
 
         <div class="container">
@@ -302,13 +308,13 @@ function displayHTMLLogin()
                     <form action="connexion.php" class="form formLogin" method="POST" role="form" enctype="multipart/form-data">
                         <div class="form-group col-md-8">
                             <label for="email">Adresse Email :</label>
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Votre Email" required>
-                            <span class="help-inline"></span>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Votre Email" value="<?php echo $email; ?>">
+                            <span class="help-inline"><?php echo $emailError; ?></span>
                         </div>
                         <div class="form-group col-md-8">
-                            <label for="password">Mot de passe :</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Votre mot de passe" required>
-                            <span class="help-inline"></span>
+                            <label for="firstname">Mot de passe :</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Votre mot de passe" value="<?php echo $password; ?>">
+                            <span class="help-inline"><?php echo $passwordError; ?></span>
                         </div>
                         <br>
                         <div class="form-actions col-md-8">
@@ -316,17 +322,17 @@ function displayHTMLLogin()
                             <a class="btn btn-info" role="button" href="index.php">Retour</a>
                         </div>
                         <br>
-                        <div class="help-inline"></div>
+                        <div class="help-inline"><?php echo $login ?></div>
                         <p>Pas encore de compte? <a href="inscription.php">Inscrivez-vous !</a> </p>
                     </form>
                 </div>
             </div>
         </div>
     <?php
-}
+    }
 
-function displayHTMLRegister()
-{
+    function displayHTMLRegister()
+    {
     ?>
         <div class="container">
             <form id="register-form" action="inscription.php" class="form formRegister" method="POST" role="form" enctype="multipart/form-data">
@@ -421,10 +427,10 @@ function displayHTMLRegister()
         </div>
 
     <?php
-}
+    }
 
-function displayHTMLdisconnect()
-{
+    function displayHTMLdisconnect()
+    {
     ?>
         <div class="container">
             <div class="row">
@@ -444,12 +450,12 @@ function displayHTMLdisconnect()
         </div>
 
     <?php
-}
+    }
 
-
-function displayHTMLFormContact()
-{
+    function displayHTMLFormContact()
+    {
     ?>
+
         <div class="container">
             <div class="row " align="center">
                 <div class="col-sm-12">
@@ -511,11 +517,13 @@ function displayHTMLFormContact()
                 </div>
             </div>
         </div>
-    <?php
-}
 
-function displayHTMLDeclarationForm()
-{
+
+    <?php
+    }
+
+    function displayHTMLDeclarationForm()
+    {
     ?>
         <div class="container">
             <div class="row" align="center">
@@ -580,98 +588,11 @@ function displayHTMLDeclarationForm()
                         </div>
 
                     </form>
-                    
+                    <?php echo $_POST['service']; ?>
                 </div>
             </div>
         </div>
-    <?php
-}
 
-function displayHTMLSearch(){
-    ?>
-        <h2>Trouvez votre Petsitter</h2>
-
-        <div class="container">
-            <form action="recherche.php" method="get" id="formSearch" >
-                <div class="row divSearch" >
-                    
-                    <div class="col-sm" align="center">
-                        <label for="zipcode">Code postal :</label>
-                        <input id="zipcode" type="text" name="zipcode" class="form-control">
-                    </div>
-                    <div class="col-sm">
-                    <label for="housingType">Type d'habitation : </label> <br>
-                        <select name="housingType" id="housingType">
-                            <option value="">Choisir un type</option>
-                            <option value="Maison">Maison</option>
-                            <option value="Appartement">Appartement</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                    <label for="animals">Présence d'animaux : </label> <br>
-                        <select name="animals" id="animals">
-                            <option value="">--</option>
-                            <option value="Oui">Oui</option>
-                            <option value="Non">Non</option>
-                        </select>
-                    </div>
-                </div><br>
-                <div class="row" align="center">
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-info" align="center">Rechercher</button> 
-                    </div>  
-                </div>  
-            </form>
-            <div class="dividerSearch"></div>
-        </div>
 
     <?php
-}
-
-function displayTable($pTable)
-{
-    if(!empty($pTable))
-    {
-        // affichage en mode TABLE HTML
-        $lHTMLTable = '<div class="container">';
-        $lHTMLTable .= '<div class="row">';
-        
-        foreach($pTable as $petsitter)
-        {
-            $image = $petsitter['picture'];
-            $firstname = $petsitter['petsitter_firstname'];
-            $lastname = $petsitter['petsitter_lastname'];
-            $zipcode = $petsitter['zipcode'];
-            $city = $petsitter['city'];
-            $description = $petsitter['description'];
-            $housingType = $petsitter['housing_type'];
-            $animals = $petsitter['animals'];
-            $id = $petsitter['ID'];
-            
-
-            $lHTMLTable .= '<div class="col-md-4 col-sm-6">';
-
-            $lHTMLTable .= '<div class="img-thumbnail petsitter" align="center" >';
-            if(empty($image)){
-                $lHTMLTable .= "<img src='./images/icon.png' class='img-fluid imgPetsitter'  alt='icone représentant un petsitter'>".'<br>';
-            }else{
-                $lHTMLTable .= "<img src='./images/$image' class='img-fluid imgPetsitter'  alt='photo du petsitter'>".'<br>';
-            }   
-            $lHTMLTable .= "<p class='bold'>$firstname $lastname</p>";
-            $lHTMLTable .= "<p><span class='blue'>Code postal : </span>$zipcode </p>";
-            $lHTMLTable .= "<p><span class='blue'>Ville : </span>$city </p>";
-            $lHTMLTable .= "<p><span class='blue'>Type d'habitation : </span>$housingType </p>";
-            $lHTMLTable .= "<p><span class='blue'>Présence d'animaux : </span>$animals </p>";
-            $lHTMLTable .= "<p><span class='blue'>Description :</span><br>$description</p>";
-            $lHTMLTable .= "<a class='btn btn-info' role='button' href='contact.php?id=$id'>Contactez-le</a>";
-
-            $lHTMLTable .= "</div>";
-            $lHTMLTable .= "</div>";
-        }
-    
-        
-        $lHTMLTable .= "</div>";
-        $lHTMLTable .= "</div>";
-        echo "$lHTMLTable";
     }
-}

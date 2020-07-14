@@ -4,8 +4,12 @@ session_start();
 require_once "./Utils/View.php";
 
 displayHTMLHeadPages();
-displayHTMLHeaderPages();
 
+if (!empty($_SESSION['petsitter_firstname'])) {
+    displayHTMLHeaderPagesLog();
+} else {
+    displayHTMLHeaderPages();
+}
 ?>
 <div class="divMentions">
     <h2 class="h2Mentions">Mentions légales Vacanc' Ô poil</h2>

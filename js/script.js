@@ -26,6 +26,7 @@ $(function () {
                 {
                     $('#contact-form').append("<p align='center'>Votre message a bien été envoyé.</p>"); // Me permet d'afficher mon message de remerciement.
                     $('#contact-form')[0].reset();// Me permet de remettre mes champs de mon formulaire à zéro.
+
                 }
                 else {
                     $('#name + .comments').html(json.nameError); // Permet d'afficher le message d'erreur correspondant au champ ciblé.
@@ -71,6 +72,7 @@ $(function () {
             }
         });
     });
+
 
 
 })

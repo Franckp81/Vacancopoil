@@ -2,14 +2,18 @@ body {
   --main-blue: #03989e;
   --main-bg-color: #a8cbcc;
   font-family: "Roboto", sans-serif;
-  	display : table;
-	width: 100%;
+  display: table;
+  width: 100%;
 }
-html, body {
-	height: 100%;
-	margin: 0; padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
+.bold {
+  font-weight: bold;
+}
 
 /* HEADER ACCUEIL */
 
@@ -25,28 +29,32 @@ html, body {
   flex-direction: column;
   text-align: center;
 }
-.bg-light{
-  background-color: #E2EAEE !important;
+.bg-light {
+  background-color: #e2eaee !important;
 }
 
-.headerPages .nav-link{
+.headerPages .nav-link {
   color: black !important;
   margin-right: 1rem;
 }
-.headerPages .nav-link:hover{
+.headerPages .nav-link:hover {
   text-decoration: underline;
 }
 
 .linkHeaderPages {
-  text-align: center; 
+  text-align: center;
   margin: auto;
-
 }
 .linkHeaderPages a {
   color: black;
   margin-left: 1.5rem;
 }
-
+.firstnameHome {
+  font-weight: bold;
+  margin-right: 0.3rem;
+  text-shadow: 0px 0px 3px white;
+  color: black;
+}
 
 .slogan {
   font-family: "Abhaya Libre", serif;
@@ -106,16 +114,15 @@ header > .link {
   background-color: #138496 !important;
 }
 .navbar-toggler {
-  
   border-style: none;
   background-color: var(--main-blue);
   border: 2px solid white;
 }
-.togglerPages{
+.togglerPages {
   background-color: #e2eaee;
 }
-#navbarNav{
-  justify-content: right;
+#navbarNav {
+  justify-content: flex-end;
 }
 
 /* SECTION ACCUEIL */
@@ -131,8 +138,7 @@ section {
 .shelterItalic {
   font-style: italic;
 }
-h2
- {
+h2 {
   color: var(--main-blue);
   text-shadow: 0px 0px 2px white;
   font-weight: bold;
@@ -145,7 +151,7 @@ h3 {
   color: var(--main-blue);
   text-shadow: 0px 0px 1px var(--main-bg-color);
 }
-.shelterH3{
+.shelterH3 {
   font-style: italic;
   margin: 2rem 0;
   color: white;
@@ -180,25 +186,27 @@ h3 {
 footer {
   background-color: #e2eaee;
   text-align: center;
-  display : table-row;
-  height: 8rem; 
+  display: table-row;
+  height: 8rem;
 }
 footer a {
   color: black;
 }
 .mentions {
-  margin-top:2rem;
-  text-align: center; 
+  margin-top: 2rem;
+  text-align: center;
   margin: auto;
 }
 
 /* LOGIN */
 
-.divFormLogin, .divFormRegister {
+.divFormLogin,
+.divFormRegister,
+.divSearch {
   text-align: center;
 }
-.divFormLogin{
-    margin: 2.5rem 0;
+.divFormLogin {
+  margin: 2.5rem 0;
 }
 .formLogin {
   display: flex;
@@ -209,54 +217,56 @@ footer a {
   padding: 2rem;
   box-shadow: 0px 0px 10px var(--main-bg-color);
   margin-bottom: 3rem;
-
 }
-.formLogin .btn, .formContact .btn{
-  margin: 2rem 0 ;
+.formLogin .btn,
+.formContact .btn {
+  margin: 2rem 0;
 }
-.form-actions{
+.form-actions {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
-
 /* MENTIONS */
 
-.h2Mentions{
+.h2Mentions {
   text-transform: uppercase;
 }
-.bold{
+.bold {
   font-weight: bold;
 }
 
 /* INSCRIPTION */
 
-.formRegister, .formDisconnect , #contact-form, #declaration-form {
+.formRegister,
+.formDisconnect,
+#contact-form,
+#declaration-form,
+#formSearch {
   box-shadow: 0px 0px 10px var(--main-bg-color);
   padding: 2rem;
   margin-bottom: 3rem;
   border-radius: 10px;
 }
-.formRegisterLeft input{
+.formRegisterLeft input {
   width: 70%;
   margin: auto;
 }
-.formRegister p{
+.formRegister p {
   text-align: center;
 }
-.btnRegister{
+.btnRegister {
   margin: 3rem auto;
 }
 
 /* CONTACT PETSITTER */
 
-#service-select{
-  margin-top: 0.2rem ;
+#service-select {
+  margin-top: 0.2rem;
   margin-bottom: 2rem;
-
 }
-.blue{
+.blue {
   color: var(--main-blue);
   margin: 0.5rem;
   font-style: italic;
@@ -264,9 +274,38 @@ footer a {
 
 /* DECLARATION PRESTATION */
 
-.divider{
+.divider {
   width: 60%;
   height: 1px;
   background: var(--main-blue);
   margin: 3rem;
+}
+
+/* RECHERCHE */
+
+.divSearch label {
+  margin-top: 1rem;
+}
+.divSearch input {
+  width: 70%;
+}
+.dividerSearch {
+  height: 1px;
+  width: 70%;
+  background: var(--main-blue);
+  margin: 1.5rem auto;
+}
+.petsitter {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px var(--main-bg-color);
+  border-radius: 10px;
+}
+.petsitter img {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.imgPetsitter{
+  height: 15rem;
+  width: 15rem !important;
 }
